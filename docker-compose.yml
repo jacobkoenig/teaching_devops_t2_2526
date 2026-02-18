@@ -3,8 +3,7 @@ services:
         build:
             context: flask-app
             dockerfile: Dockerfile
-            # Note: We removed the 'ports' section here.
-            # The app is now only accessible via Nginx.
+        image: jacobkoenig/flask-running-app:latest
     nginx:
         image: nginx:latest
         ports:
